@@ -1,48 +1,86 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-<div class="content">
-    <div class="grid">
-        <figure class="effect-oscar">
-            <img src="{{asset('assets/img/bg.jpg')}}" alt="img09"/>
-            <figcaption>
-                <h2>Warm <span>Oscar</span></h2>
-                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-                <a href="#">View more</a>
-            </figcaption>			
-        </figure>
+ <!-- Header -->
+ <header class="masthead d-flex" id="home">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">md mahbub alam</h1>
+      <h3 class="mb-5">
+        <em>Laravel Developer</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
     </div>
-</div>
-    {{-- <section id="about">
-        <div class="container about-content">
-            <div class="row">
-                <div class="col-md-12 justify-content-center text-center">
-                    <img src="{{asset('assets/img/bg.jpg')}}" class="img-fluid img-thumbnail profile-img" alt="">
-                </div>
-                <div class="col-md-12 text-center user-info">
-                    <span class="display-2 user-name">Mahbub Alam</span>
-                    <span class="display-4 bio"> <span class="program-name">Laravel</span> Developer</span>
-                    <h4 class="user-details">
-                        Love to write program in PHP <span class="and-quote">&</span> JavaScript
-                    </h4>
-                    <h4 class="user-self">
-                        <span class="self">Self Learner</span> | <span class="self">Slow Learner</span> | <span class="self">Flexible</span> | <span class="self">Honest</span>
-                    </h4>
-                </div>
-            </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+          <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
+            <a href="https://unsplash.com/">Unsplash</a>!</p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
         </div>
-    </section>
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <span class="btn btn-outline-danger btn-md info">Laravel</span>
-                    <span class="btn btn-outline-danger btn-md info">React JS</span>
-                </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Portfolio</h3>
+        <h2 class="mb-5">Recent Projects</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Stationary</div>
+                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+              </div>
             </div>
-            <div class="row">
-                
-            </div>
+            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+          </a>
         </div>
-    </section> --}}
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Ice Cream</div>
+                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Strawberries</div>
+                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Workspace</div>
+                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 @endsection
